@@ -1,0 +1,16 @@
+{
+    "name": "Word Counter",
+    "description": "count words on current page",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action" : {
+        "default_popup": "popup.html"
+    } ,
+    "permissions": ["activeTab"],
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ]
+}

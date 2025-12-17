@@ -1,0 +1,15 @@
+{
+  "name": "Background Color Changer",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": ["https://*.wikipedia.org/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://*.wikipedia.org/*", "<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}

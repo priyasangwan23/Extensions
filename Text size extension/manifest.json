@@ -1,0 +1,14 @@
+{
+    "name": "Text Size Increase",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://*.wikipedia.org/*", "<all_urls>"],
+            "js": ["content.js"]
+        }
+    ]
+}
